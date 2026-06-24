@@ -5,11 +5,9 @@ import 'cat_state.dart';
 
 class CatBloc extends Bloc<CatEvent, CatState> {
   final CatRepository _repository;
-
   CatBloc(this._repository) : super(CatInitial()) {
     on<FetchCatsEvent>(_onFetchCats);
   }
-
   Future<void> _onFetchCats(
     FetchCatsEvent event,
     Emitter<CatState> emit,

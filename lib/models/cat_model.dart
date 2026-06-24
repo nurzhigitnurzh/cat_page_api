@@ -10,13 +10,12 @@ class CatModel {
     required this.width,
     required this.height,
   });
-
   factory CatModel.fromJson(Map<String, dynamic> json) {
     return CatModel(
-      id: json['id'],
-      url: json['url'],
-      width: json['width'],
-      height: json['height'],
+      id:json['id'],
+      url:json['url'],
+      width:json['width'],
+      height:json['height'],
     );
   }
 }

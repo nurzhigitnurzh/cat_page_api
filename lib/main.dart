@@ -4,16 +4,13 @@ import 'package:talker_bloc_logger/talker_bloc_logger.dart';
 import 'bloc/cat_bloc.dart';
 import 'bloc/cat_event.dart';
 import 'repository/cat_repository.dart';
-import 'ui/screens/cat_page.dart';
-
+import 'UI/screen/cat_page.dart';
 void main() {
   Bloc.observer = TalkerBlocObserver();
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return BlocProvider(

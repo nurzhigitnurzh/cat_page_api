@@ -9,7 +9,7 @@ class CatApiService {
     _dio.interceptors.add(TalkerDioLogger());
     final Response response = await _dio.get(
       'https://api.thecatapi.com/v1/images/search',
-      queryParameters: {'limit': 10},
+      queryParameters: {'limit': 1},
     );
     List<CatModel> listCat = <CatModel>[];
     response.data.forEach((dynamic json) {
